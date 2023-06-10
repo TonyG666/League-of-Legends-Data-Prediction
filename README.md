@@ -57,6 +57,7 @@ We are using post-game data to predict the position of player, while the positio
 
 13. **monsterkills**: The total number of monsters killed in the jungle in a single game.
 
+---
 
 # Baseline Model
 
@@ -90,6 +91,7 @@ After experiments, we notice that the accuracy scores are around **0.723**. Thus
 Also, there may be **other limitations with the DecisionTreeClassifier** we are using, since decision trees have a tendency to **overfit the training data**. 
 * *Overfitting occurs when the model captures noise and irrelevant patterns in the training data, leading to poor generalization on unseen data. This is more likely to happen with multiclass classification because the decision boundaries can become more intricate, and the model might memorize the training examples instead of learning meaningful patterns.*
 
+---
 
 # Final Model
 
@@ -126,6 +128,8 @@ Also, there may be **other limitations with the DecisionTreeClassifier** we are 
 ## Performance
 
 After using additional features on top of those used in our Baseline Model and changing the classifier from DecisionTreeClassifier to RandomForestClassifier, throughout many runs, the final model accuracy scores have a **steady increase of approximately 0.07**(i.e., from 0.72 to 0.79). In comparison with DecisionTreeClassifier, RandomForestClassifier helps in **reducing overfitting** and increasing the diversity of the trees in the ensemble. Random forests are also **less sensitive to noisy data and outliers**. What's more, RandomForestClassifier provides a feature importance measure, which helps identify the most important features for prediction. Therefore, RandomForestClassifier improves our model performance in terms of accuracy.
+
+---
 
 # Fairness Analysis
 
