@@ -75,6 +75,7 @@ We are using post-game data to predict the position of player, while the positio
 * We focus on the following features to do transformations: 
   * One **Quantitative** Feature: "wpm"
   * One **Nominal** Feature: "result" (after one-hot encoding)
+  * Zero **Ordinal** Feature
   
 ## Encoding
 
